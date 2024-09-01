@@ -1,25 +1,36 @@
-This code demonstrates various operations on a Binary Search Tree (BST) including insertion, deletion, node updating, and different tree traversals (pre-order, post-order, in-order, and level order).
+# Binary Search Tree (BST) Operations
 
-Explanation:
-Node Structure:
-The Node structure defines a node in the binary search tree, containing an integer data, and pointers to left and right children.
-Insertion:
-insert function adds a new value to the BST. It recursively finds the correct position and inserts the new node while maintaining the BST property.
-Deletion:
-deleteNode function removes a node with a specified key. It handles three cases:
-The node to be deleted has no children (leaf node).
-The node has one child.
-The node has two children. It replaces the node with its in-order successor (smallest node in the right subtree) and then deletes the successor.
-Updating Nodes:
-updateNode first deletes a node with the oldValue and then inserts a new node with newValue. This method is used to update a node’s value in the BST.
-Traversals:
-Pre-order Traversal (preOrder): Uses a stack to traverse the tree. It visits the root node first, then recursively visits the left and right subtrees.
-Post-order Traversal (postOrder): Uses two stacks to traverse the tree. It first processes the left and right children, then the root node.
-In-order Traversal (inOrder): Uses a stack to traverse the tree. It visits the left subtree, then the root node, and finally the right subtree.
-Level-order Traversal (levelOrder): Uses a queue to visit nodes level by level, starting from the root.
-Main Function:
-Inserts nodes into the BST.
-Deletes a node with value 20.
-Updates a node with value 30 to 35.
-Prints the results of all four traversals.
-This code demonstrates how to manipulate and traverse a binary search tree using various techniques and provides a comprehensive view of BST operations.
+## Overview
+
+This program demonstrates various operations on a Binary Search Tree (BST) in C++. It includes functionality for inserting nodes, deleting nodes, updating node values, and performing different tree traversals (pre-order, post-order, in-order, and level-order).
+
+## Features
+
+- **Insertion**: Adds a new value to the BST while maintaining its properties.
+- **Deletion**: Removes a node with a specified key, handling various cases (no children, one child, two children).
+- **Update**: Updates a node's value by deleting the existing node and inserting a new one.
+- **Traversals**:
+  - **Pre-order Traversal**: Visits nodes in the order: root, left subtree, right subtree.
+  - **Post-order Traversal**: Visits nodes in the order: left subtree, right subtree, root.
+  - **In-order Traversal**: Visits nodes in the order: left subtree, root, right subtree.
+  - **Level-order Traversal**: Visits nodes level by level starting from the root.
+
+Code Explanation
+
+Node Structure: Defines a node with data, left, and right pointers.
+Insert Function: Recursively adds a new node to the BST.
+Delete Function: Removes a node, handling cases with no children, one child, or two children.
+Update Function: Updates a node’s value by first deleting the existing node and then inserting a new one.
+Traversal Functions:
+preOrder: Uses a stack for pre-order traversal.
+postOrder: Uses two stacks for post-order traversal.
+inOrder: Uses a stack for in-order traversal.
+levelOrder: Uses a queue for level-order traversal.
+Example Output
+
+After inserting and modifying nodes, the program performs and displays the results of the following traversals:
+
+Pre-order traversal
+Post-order traversal
+In-order traversal
+Level-order traversal
